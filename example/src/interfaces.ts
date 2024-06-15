@@ -15,10 +15,6 @@ const myDog: Dog = {
 
 // types can also be extended
 
-interface ObjWithNumKeys {
-
-}
-
 type numEntries = [key: number, value: string];
 type numKeyArr = Array<numEntries>;
 
