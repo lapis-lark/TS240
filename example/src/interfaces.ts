@@ -14,3 +14,16 @@ const myDog: Dog = {
 }
 
 // types can also be extended
+
+interface ObjWithNumKeys {
+
+}
+
+type numEntries = [key: number, value: string];
+type numKeyArr = Array<numEntries>;
+
+let example: numKeyArr = [[1, 'hi'], [4, 'howdy'], [6, 'osuuu'], [11, 'ya hou!']];
+
+example.forEach(([key, value]) => {
+    console.log(typeof key === 'number');
+});
