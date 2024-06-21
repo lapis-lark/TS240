@@ -63,3 +63,26 @@ type ApiConfig = {
   
   console.log(getArea({ kind: "circle", radius: 10 }));
   console.log(getArea({ kind: "square", sideLength: 10 }));
+
+
+  // review index signatures!
+  interface StringMap {
+    [key: string]: string;
+  }
+  
+  const dictionary: StringMap = {
+    hello: "world",
+    goodbye: "moon",
+  };
+  
+  // No direct output; dictionary validates the StringMap interface
+
+  // practice writing type guards with type predicates for working with unknown
+
+  // make sure clear on what control flow analysis is, be able to explain well
+
+  // look at using discriminated unions without errors
+  // https://www.typescriptlang.org/docs/handbook/2/narrowing.html#handbook-content
+
+
+  // review void
